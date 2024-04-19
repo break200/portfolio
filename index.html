@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <!-- 익스플로워 엑지 셑 -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Seo -->
+    <meta name="description" content="portfolio for Senior Developer">
+    <meta name="author" content="sanghee">
+
+    <!-- 탭 favicon 이미지 연결 -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <title>sanghee portfolio</title>
+
+    <!-- OG (open graph data) -->
+    <!-- og 카톡이나 sns 링크했을시 화면 보여주는 기능 -->
+    <meta name="og:title" content="상희의 포토폴리오" />
+    <meta name="og:type" content="website" />
+    <meta name="og:url" content="배포후 생성된 URL" />
+    <meta name="og:image" content="배포후에 생성된 이미지 URL" />
+
+    <!-- 구글폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@400;1,600&display=swap" rel="stylesheet">
+
+
+    <!-- 구글어썸 -->
+    <script src="https://kit.fontawesome.com/2f5c24603a.js" crossorigin="anonymous"></script>
+
+    <!-- css 연동 -->
+    <link rel="stylesheet" href="CSS/style.css">
+
+    <!-- javascript -->
+    <!-- defer 다분석후 실행 되는데 상관없다  -->
+    <script type="module" src="src/main.js" defer></script>
+    <script type="module" src="src/project.js" defer></script>
+    <script type="module" src="src/observer.js" defer></script>
+    <!-- 타입 모듈로 설정하면 각각의 js 파일을 모듈화 되서 전역화 할수 없다 -->
+    <!-- <script type="module" src="src/project.js" defer></script> -->
+</head>
+<body>
+    <!-- header -->
+    <header class="header">
+        <div class="header__logo">
+            <img class="header__logo__img" src="images/favicon.ico" alt="logo">
+            <h1 class="header__logo__title"><a href="#">손상희</a></h1>
+        </div>
+        <!-- nav -->
+        <nav class="header__nav">
+            <ul class="header__menu" id="header__button">
+                <li><a class="header__menu_item active" href="#home">Home</a></li>
+                <li><a class="header__menu_item" href="#about">About</a></li>
+                <li><a class="header__menu_item" href="#skills">Skills</a></li>
+                <li><a class="header__menu_item" href="#work">Work</a></li>
+                <li><a class="header__menu_item" href="#testmonials">Testmonials</a></li>
+                <li><a class="header__menu_item" href="#contant">Contant</a></li>
+            </ul>
+            <button class="header__toggle" aria-label="navigation toggle button">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+    <!-- main -->
+    <main>
+        <!-- home -->
+        <section id="home">
+            <div class="home__container">
+            <img class="home__avatar" src="images/image.png" alt="sanghee profile">
+            <h2 class="home__title">안녕하세요 <br> 저는 꾸준히 <strong class="home__title-strong"> 성장하는 개발자 </strong>입니다 </h2>
+            <p class="home__description">현재(2024) 대한민국 서울강서구에 살고 있습니다.</p>
+            <a class="home__contact" href="#contant">Contant Me</a>
+            </div>
+
+
+        </section>
+        <!-- about -->
+        <section id="about" class="section max-container">
+            <h2 class="title">About me</h2>
+            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur assumenda, ea numquam, nam quam iure provident fugit nobis alias libero maiores mollitia. Non beatae, placeat suscipit nobis eius commodi ad quo impedit quam voluptatibus rem voluptatum consequatur maiores harum voluptatem enim provident, voluptates, vel quos unde minus numquam. Architecto, eius.</p>
+            <ul class="majors">
+                <li class="major">
+                    <i class="fa-brands fa-html5 major__icon"></i>
+                    <p class="major__title">Front-end</p>
+                    <p>HTML,CSS,JavaScript,TypeScript,React,Vue,Web Apis</p>
+                </li>
+                <li class="major">
+                    <i class="fa-solid fa-mobile major__icon"></i>
+                    <p class="major__title">Mobile</p>
+                    <p>ios,Android,React native,Flutter,Java,Swift,Object-c,Kotlin,OpenGl</p>
+                </li>
+                <li class="major">
+                    <i class="fa-solid fa-server major__icon"></i>
+                    <p class="major__title">back-end</p>
+                    <p>NodeJs,Java,JavaScript,Rest Apis,Go</p>
+                </li>
+            </ul>
+            <ul class="jobs">
+                <li class="job">
+                    <img src="images/jobs/google.png" alt="google logo">
+                    <div>
+                        <p class="job__name">Google as Senior software Engineer</p>
+                        <p class="job__period">2019 Oct -Unitil now</p>
+                    </div>
+                </li>
+                <li class="job">
+                    <img src="images/jobs/samsung.png" alt="samsung logo">
+                    <div>
+                        <p class="job__name">samsung as Senior software Engineer</p>
+                        <p class="job__period">2019 Oct -Unitil now</p>
+                    </div>
+                </li>
+            </ul>
+
+        </section>
+        <!-- skills -->
+        <section id="skills" class="section">
+            <div class="max-xontainer">
+                <h2 class="title">My Skills</h2>
+                <p class="description">Skills & Attributes</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius reprehenderit corrupti in reiciendis! Tempora accusantium corrupti ad repellat eius praesentium aliquam ullam non libero eligendi minus doloremque repudiandae et nemo numquam nostrum, perspiciatis dolore minima dolorum repellendus incidunt rerum consequuntur enim. Qui laborum nemo velit odio, minus deleniti magnam maiores.</p>
+                <div class="skills">
+                   <section class="skills__coding">
+                    <h3 class="skills_title">Coding Skills</h3>
+                    <ul>
+                        <li class="bar">
+                            <div class="bar__metadata">
+                                <span>IOS</span><span>98%</span>
+                            </div>
+                            <div class="bar__bg">
+                                <div class="bar__value" style="width: 98%;"></div>
+                            </div>
+                        </li>
+                        <li class="bar">
+                            <div class="bar__metadata">
+                                <span>Android</span><span>80%</span>
+                            </div>
+                            <div class="bar__bg">
+                                <div class="bar__value" style="width: 80%;"></div>
+                            </div>
+                        </li>
+                        <li class="bar">
+                            <div class="bar__metadata">
+                                <span>HTML</span><span>75%</span>
+                            </div>
+                            <div class="bar__bg">
+                                <div class="bar__value" style="width: 75%;"></div>
+                            </div>
+                        </li>
+                        <li class="bar">
+                            <div class="bar__metadata">
+                                <span>React</span><span>80%</span>
+                            </div>
+                            <div class="bar__bg">
+                                <div class="bar__value" style="width: 80%;"></div>
+                            </div>
+                        </li>
+                        <li class="bar">
+                            <div class="bar__metadata">
+                                <span>Flutter</span><span>68%</span>
+                            </div>
+                            <div class="bar__bg">
+                                <div class="bar__value" style="width: 68%;"></div>
+                            </div>
+                        </li>
+                        <li>
+                        </li>
+                    </ul>
+                   </section>
+                   <section class="skills__tools">
+                    <h3 class="skills_title">Tools</h3>
+                    <ul>
+                        <li>Visual studio</li>
+                        <li>Xcode</li>
+                        <li>IntelliJ</li>
+                        <li>Android studio</li>
+                        <li>Skeetch app</li>
+                    </ul>
+                   </section>
+                   <section class="skills__etc">
+                    <h3 class="skills_title">Etc</h3>
+                    <ul>
+                        <li>Git</li>
+                        <li>Scrum Master</li>
+                        <li>Math</li>
+                    </ul>
+                   </section>
+                </div>
+            </div>
+
+
+
+        </section>
+        <!-- work -->
+        <section id="work" class="section">
+            <div class="max-container">
+                <h2 class="title">My work</h2>
+                <p class="description">Projects</p>
+                <ul class="categories">
+                    <li>
+                        <button class="category category--selected">All <span class="category__count">8</span></button>
+                    </li>
+                    <li>
+                         <button class="category">Front-end <span class="category__count">3</span></button>
+                    </li>
+                    <li>
+                        <button class="category">Back-end <span class="category__count">2</span></button>
+                    </li>
+                    <li>
+                        <button class="category">Mobile <span class="category__count">2</span></button>
+                    </li>
+                </ul>
+                <ul class="projects">
+                    <li class="project">
+                        <a href="#" target="_blank">
+                        <img src="images/projects/project1.webp" alt="profile1" class="project__img">
+                        <div class="project_metadata">
+                            <h3 class="project_title">Project #1</h3>
+                            <p>Clone coding With Html ,Css</p>
+                        </div>
+                        </a>
+                    </li>
+                    <li class="project">
+                        <a href="#" target="_blank">
+                        <img src="images/projects/project2.webp" alt="profile2" class="project__img">
+                        <div class="project_metadata">
+                            <h3 class="project_title">Project #2</h3>
+                            <p>Clone coding With Html ,Css</p>
+                        </div>
+                        </a>
+                    </li>
+                    <li class="project">
+                        <a href="#" target="_blank">
+                        <img src="images/projects/project3.webp" alt="profile3" class="project__img">
+                        <div class="project_metadata">
+                            <h3 class="project_title">Project #3</h3>
+                            <p>Clone coding With Html ,Css</p>
+                        </div>
+                        </a>
+                    </li>
+                    <li class="project">
+                        <a href="#" target="_blank">
+                        <img src="images/projects/project4.webp" alt="profile4" class="project__img">
+                        <div class="project_metadata">
+                            <h3 class="project_title">Project #4</h3>
+                            <p>Clone coding With Html ,Css</p>
+                        </div>
+                        </a>
+                    </li>
+                    <li class="project">
+                        <a href="#" target="_blank">
+                        <img src="images/projects/project5.webp" alt="profile5" class="project__img">
+                        <div class="project_metadata">
+                            <h3 class="project_title">Project #5</h3>
+                            <p>Clone coding With Html ,Css</p>
+                        </div>
+                        </a>
+                    </li>
+                    <li class="project">
+                        <a href="#" target="_blank">
+                        <img src="images/projects/project6.webp" alt="profile6" class="project__img">
+                        <div class="project_metadata">
+                            <h3 class="project_title">Project #6</h3>
+                            <p>Clone coding With Html ,Css</p>
+                        </div>
+                        </a>
+                    </li>
+                    <li class="project">
+                        <a href="#" target="_blank">
+                        <img src="images/projects/project7.webp" alt="profile7" class="project__img">
+                        <div class="project_metadata">
+                            <h3 class="project_title">Project #7</h3>
+                            <p>Clone coding With Html ,Css</p>
+                        </div>
+                        </a>
+                    </li>
+                    <li class="project">
+                        <a href="#" target="_blank">
+                        <img src="images/projects/project8.webp" alt="profile8" class="project__img">
+                        <div class="project_metadata">
+                            <h3 class="project_title">Project #8</h3>
+                            <p>Clone coding With Html ,Css</p>
+                        </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- testmonials -->
+        <section id="testmonials" class="section">
+                <h2 class="title">Testmonials</h2>
+                <p class="description">See what they say about me</p>
+                <ui class="testimonials">
+                    <li class="testimonial">
+                        <img src="images/testimonials/people1.webp" alt="people1" class="testimonial__img">
+                        <div class="testimonial__bubble">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque minus corporis quos rerum. Veniam repellat tenetur omnis at laborum ipsum deleniti quidem fugiat nemo in, soluta maiores, atque id tempora?</p>
+                            <p><a class="testimonial__name" href="#">James Kim</a> /Google</p>
+                        </div>
+                    </li>
+                    <li class="testimonial">
+                        <img src="images/testimonials/people2.webp" alt="people2" class="testimonial__img">
+                        <div class="testimonial__bubble">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque minus corporis quos rerum. Veniam repellat tenetur omnis at laborum ipsum deleniti quidem fugiat nemo in, soluta maiores, atque id tempora?</p>
+                            <p><a class="testimonial__name" href="#">James kim</a> /samsung</p>
+                        </div>
+                    </li>
+                    <li class="testimonial">
+                        <img src="images/testimonials/people3.webp" alt="people3" class="testimonial__img">
+                        <div class="testimonial__bubble">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque minus corporis quos rerum. Veniam repellat tenetur omnis at laborum ipsum deleniti quidem fugiat nemo in, soluta maiores, atque id tempora?</p>
+                            <p><a class="testimonial__name" href="#">James Kim</a> /Google</p>
+                        </div>
+                    </li>
+                </ui>
+        </section>
+        <!-- arrow up -->
+        <aside>
+             <a class="arrow-up" href="#home" title="back to top">
+                <i class="fa-solid fa-arrow-up"></i>
+            </a>
+        </aside>
+    </main>
+    <!-- footer -->
+    <footer id="contant" class="section">
+        <div class="max-container">
+            <h2 class="title">Let go talk</h2>
+            <p class="description">break200.kor@gmail.com</p>
+            <ul class="cotant__links">
+                <li class="contant__link">
+                    <a href="https://github.com/break200" title="my github link"></a>
+                    <i class="fa-brands fa-github"></i>
+                </li>
+                <li class="contant__link">
+                    <a href="https://github.com/break200" title="my linklin link"></a>
+                    <i class="fa-brands fa-linkedin"></i>
+                </li>
+            </ul>
+            <p>break200 - All right reserved</p>
+        </div>
+
+    </footer>
+
+
+</body>
+</html>
